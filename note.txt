@@ -1,0 +1,57 @@
+## git
+(1) repository : 코드를 저장하는 폴더이고 깃은 이걸 추적하고 있다
+(2) commit : 깃 파일 (변경사항)의 보관함이여서 무엇이 변경되었는지를 기록
+(3) branch : 마스터의 복사판
+
+## git vs github
+git : 코드의 변경사항을 추적하는 시스템
+github : 이런 변경사항들을 클라우드에 올리는 곳 --> 인터넷의 저장소인데 이런 깃 파일을 올리는 곳
+
+github 외의 플랫폼 : bitbucket (https://bitbucket.org/) --> private가 무료이닷!!! github는 public만 무료인데...
+
+github, bitbucket은 깃을 관리하는 플랫폼(웹사이트) --> 깃을 업로드 한다
+git 은 변경사항을 추적하는 시.스.템
+
+
+## Html
+프로그래밍 언어가 아니다
+hyper-text-markup-langauge
+markup: 이 부분은 중요해! 하고 밑줄을 긋는 것 같은 것이다. ----> 이게 html이다
+코드를 작성하고 이것을 부라우저에게 각각이 무엇을 뜻하는지 알려야 한다 --> 즉 마킹을 해야 하는 것!
+ex) 여기서부터 여기까지는 타이틀, 제목이고 여기부터 여기까지는 링크. --> 이런식으로 각각이 무엇인지 마킹해주는 언어가 html!
+태그 덩어리!!!
+
+웹 서버들은 index 파일을 제일 먼저 찾도록 설계되어 있다
+
+## CSS
+프로그래밍 언어가 아니다
+브라우저에게 각각 요소들이 어떻게 생겨 먹어야하는지 알려주는 것!
+
+## target 속성
+_self : 연결 문서를 클릭한 창에서 열기 (default)
+_blank : 연결 문서르르 새 창에서 열기
+_parent : 부모(상위레벨) 창에서 열기, 부모가 없으면 _self처럼 표시
+_top : 가장 상위 창에서 열기
+<a href="http://google.com" target="_blank">Go to google</a>
+
+## html 문서 규칙
+<!DOCTYPE html> : 구글 크롬으로 하여금 이 문서가 html 문서임을 알려준다
+<html></html> : 문서 내용 -> 크게 2가지로 나뉨 head, body
+<head /> 는 유저에게 보이지 않고 브라우저에게 필요한 정보를 제공
+
+## Meta targ
+meta = 엑스트라 = 추가 정보
+<meta charset="utf-8"> :  브라우저에게 내가 작성한 문서가 어떤 character(언어)로 작성되었는지 알려줌
+
+여러가지 종류의 meta 태그가 있다 특정 태그는 특정 플랫폼(트위터, 네이버, 페이스북)을 위해서 존재하기도 한다
+
+## 태그 종류 2가지
+(1) semantic 태그
+    의미가 있는 태그
+(2) non-semantic 태그
+    의미가 없는 태그
+    <div />, <spna />
+
+## Element에 명칭 주는 방법 => id vs class
+id : 여권번호!, 각 element 마다 한개만 갖는다, 고유한 element에 사용 가능
+class : 국적, 동일한 속성이 있을 때마다 여러번 반복 사용 가능
