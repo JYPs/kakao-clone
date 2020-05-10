@@ -55,3 +55,46 @@ meta = 엑스트라 = 추가 정보
 ## Element에 명칭 주는 방법 => id vs class
 id : 여권번호!, 각 element 마다 한개만 갖는다, 고유한 element에 사용 가능
 class : 국적, 동일한 속성이 있을 때마다 여러번 반복 사용 가능
+
+## CSS
+CSS 구성= selector + property
+(1) selector
+(2) property
+    selector(id, class, tag name) {
+        property-name: value;
+    }
+    h1(태그) {
+        property-name: value;
+        property-name: value;
+        property-name: value;
+        property-name: value;
+    }
+
+    id 접근 방법
+    #id {
+        property-name: value;
+        property-name: value;
+        property-name: value;
+        property-name: value;
+    }
+    class 접근 방법
+    .class {
+        property-name: value;
+        property-name: value;
+        property-name: value;
+        property-name: value;
+    }
+    혼종 
+    h1 .name {
+        property-name: value;
+    }
+
+## CSS 와 HTML 연결 방법
+(1) inline 방법... html태그의 head태그 안에 직접 <style>을 넣는것!!!
+(2) external하게 연결 ---> html 문서의 head에 <link href="styles.css" rel="stylesheet" /> 작성!!
+
+## CSS 특징
+많은 element는 Box이다
+    기억해야할 Box의 4개의 요소 Content, Padding, Border, Margin
+    Padding: Border에서 안쪽으로의 간격
+    Margin: Border에서 바깥쪽으로의 간격

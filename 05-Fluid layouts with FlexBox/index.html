@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex</title>
+  </head>
+  <style>
+    body,
+    html {
+      height: 100%;
+    }
+    .father {
+      /* 
+        중요!!
+        부모 컨테이너를 플렉스로 선언하면 그 안에 종속된 칠드런 박스들을 움직일 수 있어서 각각 박스에게 
+        일일히 명령할 필요가 없다        
+        
+        */
+      /* 자식 box에 inline-block이 되도록 만듬 
+        flex 컨테이너로 만듬!!! --> 창을 줄여도 그 창에 맞춰서 폭이 조정된다
+        창을 줄여보길 바란다
+      */
+      display: flex;
+      /* jstify-content, align-items는 flex 없이는 안먹히넹 */
+      /*
+        1. flex-direction: row 
+        jstify-content : 수평으로 적용
+        align-item : 수직으로 적용
+
+        2. flex-direction: column
+        jstify-content : 수직으로 적용
+        align-item : 수평으로 적용
+      */
+      justify-content: space-between;
+      align-items: center;
+      height: 100%;
+      /* flex가 적용되는 방향을 수직으로 변경도 가능 디폴트는 row(수평임)*/
+      /* flex-direction: column; */
+
+      /* default는 nowrap임 폭은 무시하고 다 줄어든다 wrap을 하면 간격 유지됨 */
+      flex-wrap: wrap;
+    }
+    .box {
+      width: 200px;
+      height: 200px;
+      background-color: red;
+      border: 1px solid black;
+    }
+  </style>
+  <body>
+    <div class="father">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+  </body>
+</html>

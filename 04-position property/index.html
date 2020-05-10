@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position</title>
+    <style>
+      body,
+      html {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        height: 400%;
+        background-color: red;
+      }
+      .box {
+        width: 300px;
+        height: 300px;
+        background-color: yellow;
+      }
+      /*
+      Position fixed 
+      #boxOne {
+        width: 300px;
+        height: 300px;
+        background-color: yellow;
+        position: static;
+        static에서는 top bottom right left가 안먹힘
+      }
+      #boxTwo {
+        width: 300px;
+        height: 300px;
+        background-color: green;
+        position: fixed;
+        bottom: 10px;
+      } */
+
+      .abs-box {
+        width: 400px;
+        height: 400px;
+        background-color: yellow;
+        position: relative;
+      }
+      .abs-child {
+        width: 100px;
+        height: 100px;
+        background-color: green;
+        position: absolute;
+        right: 0px;
+        /* absolute가 설정되면 html 상에서 해당 element와 관계가 있는(relative-부모박스) element를
+            살펴보고 이에 상응해서 포지션이 결정된다
+            근데 상응되는 부모 박스가 없으면 그냥 우리가 설정한 값대로 움직인다.
+            만약 abs-box의 position을 relative로 적용하면!! body가 아닌 abs-box 내에서 움직인다
+        */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Position static is default
+        element를 붙이면 거기 그대로 있다
+    -->
+    <!-- Position 1.Fixed
+        element가 그 위치에 오버랩해서 고정 -> 스크롤해도 볼 수 있다
+    <div id="boxOne">
+      <div class="box-child"></div>
+    </div>
+    <div id="boxTwo">
+      <div class="box-child"></div>
+    </div> -->
+    <!-- Position 2.absolute
+        fixed랑 비슷 but 스크롤한다고 보이지 않는다
+    -->
+    <div class="abs-box">
+      <div class="abs-child"></div>
+    </div>
+  </body>
+</html>

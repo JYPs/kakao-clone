@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inline Examle</title>
+    <style>
+      .box {
+        background-color: red;
+        width: 200px;
+        height: 200px;
+        border: 1px solid black;
+
+        /* 인라인 블럭!!!! --> 옆에 붙는당 */
+        /* display: inline-block; */
+
+        /* 인라인은 박스의 모든 property 설정값을 지움 --> width, heigth 지움
+            why? 이건 더이상 박스가 아니라서 텍스트 처럼 적용이 됨
+            
+            ## 인라인 = 텍스트
+
+            텍스트는 높이도 폭도 없다. 컨텐츠의 길이만 존재할 뿐이다
+            
+        */
+        display: inline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">1</div>
+    <div class="box">22222222</div>
+    <div class="box">3</div>
+  </body>
+</html>

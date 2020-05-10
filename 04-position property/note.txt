@@ -1,0 +1,9 @@
+모든 박스는 position이 static이다 = 그 element를 거기 놓으면 거기 있을 것이다??
+
+
+position -> static, fixed, absolute, relative
+
+static : 디폴트
+fixed : 고정, 어디든 오버랩해서 계속 해당 위치에 고정시킴
+absolute : position relative에 상대적으로 포지션을 잡는 것, relative포지션이 없을 경우 absolute는 문서의
+            본문 body에 맞춰서 포지션을 잡는다

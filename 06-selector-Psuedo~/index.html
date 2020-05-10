@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selectors and Pseudo Selecotrs</title>
+    <style>
+      /* 가상 selector */
+      input[type="submit"] {
+        background-color: red;
+      }
+      input[type="password"] {
+        background-color: blue;
+      }
+      input[required="required"] {
+        background-color: brown;
+      }
+
+      /* 
+      
+      http://www.topdesignagencies.com/nth-test/
+      
+      */
+      /* input + box 이 뜻은 서로가 형제라는 의미 */
+      /* input + .box {
+        border: 1px solid black;
+      } */
+      /* input 과 box 이 뜻은 direct child, 직계라는 뜻, 그 밑에 다른 박스들이 있다면 걔네들한테는 해당 X */
+      input > .box {
+        border: 1px solid black;
+        background-color: red;
+      }
+      .box {
+        background-color: green;
+        display: block;
+        height: 100px;
+        border: 1px solid black;
+      }
+      .child {
+        width: 40px;
+      }
+      .container > .box {
+          background-color: yellowgreen;
+      }
+      /* .box:last-child {
+        background-color: pink;
+      }
+      .box:first-child {
+        background-color: aqua;
+      }
+      .box:nth-child(2) {
+        background-color: blueviolet;
+      }
+      .box:nth-child(3n) {
+        background-color: beige;
+      } */
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <div class="box child"></div>
+      </div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box">
+        <input type="passward">
+            <div class="box"></div>
+        </input>
+      </div>
+      <div class="box">
+        <input type="submit" />
+        <input type="text" required="required" />
+      </div>
+    </div>
+  </body>
+</html>
